@@ -1,6 +1,6 @@
 html {
     background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5) no-repeat top left / cover;
-    font-family: 'helvetica neue';
+    font-family: 'Helvetica Neue';
     text-align: center;
     font-size: 10px;
 }
@@ -39,7 +39,20 @@ body {
 .hand {
     width: 50%;
     height: 6px;
-    background: black;
     position: absolute;
     top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all .5s;
+    /* transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+}
+
+.hour-hand {
+    background-color: black;
+}
+.min-hand {
+    background-color: navy;
+}
+.second-hand {
+    background-color: cornsilk;
 }
